@@ -13,9 +13,8 @@ finch run \
 		--env MDS_LATEST_RATINGS=true \
 		--env MDS_ENABLE_EXPORT=true \
 		--env ENVIRONMENT=docker \
-		--mount type=bind,source=./VOLUMES,target=/workspaces/volumes \
+		--mount type=bind,source=./VOLUMES,target=/workspaces/volumes/ \
 		--name superset \
 		lee/superset \
 		jupyter lab --ip=0.0.0.0 --port=8888 --NotebookApp.token='' --allow-root
 
-pause
