@@ -14,5 +14,5 @@ os.getcwd()
 
 3. KILL YOUR JUPYTER KERNEL! DuckDB can only have one concurrent connection. If you're having issues connecting, make sure your Jupyter kernel isn't still connected to the .db file you had created.
 
-4. Open superset at localhost:8088. Navigate to the databases connectors and modify the string to the path you'd created your db above: duckdb:////workspaces//sample.db
+4. Open superset at localhost:8088. Navigate to the databases connectors and modify the string to the path you'd created your db above: duckdb:////workspaces//volumes//sample.db
 
